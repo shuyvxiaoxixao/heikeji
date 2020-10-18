@@ -1,0 +1,31 @@
+/* pages/mbook/addwater.wxss */
+
+.nav {
+  width: 150px;
+  height: 32px;
+  margin: 0 auto;
+  border: 1px solid #f6c142;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #f6c142;
+}
+
+.nav-l {
+  float: left;
+  width: 49%;
+  line-height: 32px;
+  text-align: center;
+  border-right: 1px solid #f6c142;
+}
+
+.nav-r {
+  float: left;
+  width: 49%;
+  line-height: 32px;
+  text-align: center;
+}
+
+.nav-active {
+  background-color: #f6c142;
+  color: #fff;
+}

@@ -1,0 +1,52 @@
+<!--mbook.wxml-->
+<view class='mbook'>
+  <view class="showbox">
+    <view class='showbox-top'>
+      <view class='s-t-money'>10,000</view>
+      <view class='s-t-tag'>资金结余</view>
+    </view>
+    <view class='showbox-down'>
+      <view class='s-d-item'>
+        <view>
+          5,999
+        </view>
+        <view>
+          5月收入
+        </view>
+      </view>
+      <view class='s-d-item'>
+        <view>
+          5,999
+        </view>
+        <view>
+          5月支出
+        </view>
+      </view>
+    </view>
+  </view>
+  <scroll-view scroll-y="true" class='mbox' bindscrolltolower='searchScrollLower' >
+    <view class='mbox-item' wx:for="{{list}}" wx:key="date" wx:for-index="groupindex">
+      <view class='m-t-title'>
+        <view class='m-t-t-left'>{{item.date}}</view>
+        <view class='m-t-t-right'>收入:{{item.dayin}} 支出:{{item.dayout}}</view>
+      </view>
+      <view class='m-list' wx:for="{{item.mwters}}" wx:key="id" wx:for-item="cell" wx:for-index="cellindex">
+        <view class='m-l-left'>
+          <view class='m-l-timg'>
+            <image class='m-l-t-img' src='https://tooapi.tooao.cn/images/icon/1.png'></image>
+          </view>
+          <view class='m-l-title'>
+            {{cell.tag}}
+          </view>
+        </view>
+        <view class='m-l-right'>
+          {{cell.money}}
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="content">
+
+    <!-- <button type="primary" bindtap="add"> + 记账 </button> -->
+  </view>
+</view>

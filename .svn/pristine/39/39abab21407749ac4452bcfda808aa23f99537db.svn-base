@@ -1,0 +1,125 @@
+/**mbook.wxss**/
+
+.content {
+  padding: 0 5px;
+}
+
+.mbook {
+  overflow: hidden;
+}
+
+.content .add {
+  height: 30px;
+  line-height: 30px;
+}
+
+.showbox {
+  position: fixed;
+  height: 180px;
+  background: url('http://tooapi.tooao.cn/images/3.jpg') no-repeat;
+  background-size: 100% 100%;
+  color: #fff;
+  clear: both;
+  width: 100%;
+  z-index: 100;
+}
+
+.showbox-top {
+  text-align: center;
+}
+
+.s-t-money {
+  font-size: 2rem;
+  font-family: 'KaiTi';
+  padding: 20px 0 8px;
+}
+
+.s-t-tag {
+  font-size: 12px;
+}
+
+.showbox-down {
+  margin-top: 10px;
+}
+
+.s-d-item {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.mbox {
+  margin-top: 180px;
+}
+
+.mbox-item {
+  clear: both;
+}
+
+.m-t-title {
+  background-color: #f8f8f8;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #959595;
+}
+
+.m-t-t-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.m-t-t-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.m-list {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ededed;
+  clear: both;
+  vertical-align: middle;
+}
+
+.mbox-item .m-list:last-child {
+  border-bottom: 0px solid #ededed;
+}
+
+.m-l-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.m-l-timg {
+  float: left;
+}
+
+.m-l-t-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 8px;
+}
+
+.m-l-title {
+  float: left;
+  font-size: 14px;
+}
+
+.m-l-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.addwater {
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+.addwater .addimg {
+  width: 50px;
+  height: 50px;
+}

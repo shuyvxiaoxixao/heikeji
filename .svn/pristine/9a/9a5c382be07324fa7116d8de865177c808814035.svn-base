@@ -1,0 +1,19 @@
+<!--pages/mbook/addwater.wxml-->
+<view class='content'>
+  <view class='nav'>
+    <view class='nav-l nav-active'>
+      支出
+    </view>
+    <view class='nav-r'>
+      收入
+    </view>
+  </view>
+  <view>
+    <view>
+    <image></image>
+    </view>
+    <view>
+
+    </view>
+  </view>
+</view>

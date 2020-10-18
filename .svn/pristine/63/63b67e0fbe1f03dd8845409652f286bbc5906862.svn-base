@@ -1,0 +1,7 @@
+<!--mbook.wxml-->
+<view class="content">
+  <view class="userinfo">
+   <label>资产:</label> <label>10000</label>
+  </view>
+  <button type="primary" bindtap="add"> + 记账 </button>
+</view>

@@ -1,0 +1,149 @@
+/**mbook.wxss**/
+@import "/svgs.wxss";
+
+.content {
+  padding: 0 5px;
+}
+
+.mbook {
+  overflow: hidden;
+}
+
+.content .add {
+  height: 30px;
+  line-height: 30px;
+}
+
+.showbox {
+  /* height: 150px; */
+  /* background: url('https://tooapi.tooao.cn/images/2.jpg') no-repeat;
+  background-size: 100% 100%; */
+  /* background-color: #ff8c78; */
+  color: #fff;
+  clear: both;
+  width: 100%;
+  z-index: 100;
+  /* background-color: rgba(255,255,255,.5); */
+}
+
+.showbox-top {
+  text-align: center;
+}
+
+.s-t-money {
+  font-size: 2rem;
+  font-family: 'KaiTi';
+  padding: 30rpx 0 10rpx;
+}
+
+.s-t-tag {
+  font-size: 0.8rem;
+}
+
+.showbox-down {
+   margin-top: 20rpx; 
+}
+
+.s-d-item {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.s-d-item-top {
+  font-family: 'KaiTi';
+   font-size: 1.2rem;
+}
+
+.s-d-item-down {
+   font-size: 0.8rem;
+}
+
+.mbox {
+  min-height: 200px;
+}
+
+.mbox-item {
+  clear: both;
+}
+
+.m-t-title {
+  background-color: #f8fafc;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #959595;
+}
+
+.m-t-t-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.m-t-t-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.m-list {
+  height: 120rpx;
+  line-height: 120rpx;
+  clear: both;
+  vertical-align: middle;
+}
+
+/* .m-list:hover {
+  background-color: #f0f0f0;
+} */
+
+.m-l-left {
+  float: left;
+  /* padding: 8px 10px 0; */
+  width: 17%;
+  /* text-align: center; */
+}
+
+.m-l-timg {
+  background-color: #f6c142;
+  margin: 8px 10px 0;
+}
+
+.m-l-right {
+  width: 83%;
+  float: left;
+  /* margin-right: 10px; */
+  /* background-color: #f0f0f0;  */
+  border-bottom: 0.5px solid #ededed;
+}
+
+.mbox-item .m-list:last-child .m-l-right {
+  border-bottom: 0px;
+}
+
+.m-l-tagname {
+  float: left;
+}
+
+.m-l-tagremark{
+  color: #959595;
+  font-size: 13px;
+}
+
+.m-l-money {
+  float: right;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.addwater {
+  position: fixed;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+}
+
+.addwater .addimg {
+  width: 50px;
+  height: 50px;
+}

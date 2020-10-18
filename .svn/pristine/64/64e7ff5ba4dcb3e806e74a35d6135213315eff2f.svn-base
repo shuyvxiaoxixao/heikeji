@@ -1,0 +1,47 @@
+<!--pages/cards/addcard.wxml-->
+<view class="content">
+  <view class='cardbox'>
+    <view class='cardbox-item'>
+      <image class='cardbox-img' src='/imges/cards.png'></image>
+    </view>
+    <form bindsubmit="formSubmit">
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='cardname' placeholder="卡片名称：例(中国银行)" maxlength="10" value='{{cardinfo.cardname}}' auto-focus/>
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='gudingmoney' type="digit" placeholder="固定额度：例(10000)" value='{{cardinfo.gudingmoney}}' maxlength="10" />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='yiyongmoney' type="digit" placeholder="已用额度：例(6000)" value='{{cardinfo.yiyongmoney}}' maxlength="10" />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='keyongmoney' type="digit" placeholder="可用额度：例(4000)" value='{{cardinfo.keyongmoney}}' />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='zhangdanri' type="digit" maxlength='2' placeholder="账单日" value='{{cardinfo.zhangdanri}}' />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='huikuanri' type="digit" maxlength='2' placeholder="还款日" value='{{cardinfo.huikuanri}}' />
+        </view>
+      </view>
+      <view class='savecradbox'>
+        <button formType="submit" type="primary" class="savecrad" loading="{{loading}}" bindtap="savecrad"> 保存 </button>
+      </view>
+      <view class="hide">
+        <input name='user' value='{{openid}}' />
+        <input name='id' value='{{cardinfo.id}}' />
+      </view>
+    </form>
+  </view>
+</view>

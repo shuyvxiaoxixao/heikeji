@@ -1,0 +1,65 @@
+<!--pages/cards/addcard.wxml-->
+<view class="content">
+  <view class='cardbox'>
+    <view class='cardbox-item'>
+      <image class='cardbox-img' src='/imges/cards.png'></image>
+    </view>
+    <form bindsubmit="formSubmit">
+      <view class="t-item">
+        <view class='t-item-left'>
+          账户名称
+        </view>
+        <view class='t-item-right'>
+          <input name='cardname' placeholder="如:中国银行,支付宝" maxlength="10" value='{{cardinfo.cardname}}' auto-focus/>
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-left'>
+          固定额度
+        </view>
+        <view class='t-item-right'>
+          <input name='gudingmoney' type="digit" placeholder="固定额度" value='{{cardinfo.gudingmoney}}' maxlength="10" />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-left'>
+          已用额度
+        </view>
+        <view class='t-item-right'>
+          <input name='yiyongmoney' type="digit" placeholder="已用额度" value='{{cardinfo.yiyongmoney}}' maxlength="10" />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-left'>
+          可用额度
+        </view>
+        <view class='t-item-right'>
+          <input name='keyongmoney' type="digit" value='{{cardinfo.keyongmoney}}' />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-left'>
+          账单日
+        </view>
+        <view class='t-item-right'>
+          <input name='zhangdanri' type="digit" maxlength='2' placeholder="账单日" value='{{cardinfo.zhangdanri}}' />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-left'>
+          还款日
+        </view>
+        <view class='t-item-right'>
+          <input name='huikuanri' type="digit" maxlength='2' placeholder="还款日" value='{{cardinfo.huikuanri}}' />
+        </view>
+      </view>
+      <view class='savecradbox'>
+        <button formType="submit" type="primary" class="savecrad" loading="{{loading}}" bindtap="savecrad"> 保存 </button>
+      </view>
+      <view class="hide">
+        <input name='user' value='{{openid}}' />
+        <input name='id' value='{{cardinfo.id}}' />
+      </view>
+    </form>
+  </view>
+</view>

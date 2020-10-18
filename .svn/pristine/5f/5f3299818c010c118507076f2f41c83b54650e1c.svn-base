@@ -1,0 +1,95 @@
+/**mbook.wxss**/
+
+.content {
+  padding: 0 5px;
+}
+
+.content .add {
+  height: 30px;
+  line-height: 30px;
+}
+
+.showbox {
+  height: 180px;
+  background: url('http://tooapi.tooao.cn/images/showimg1.jpg');
+  color: #fff;
+}
+
+.showbox-top {
+  text-align: center;
+}
+
+.s-t-money {
+  font-size: 2rem;
+  font-family: 'KaiTi';
+  padding: 20px 0 8px;
+}
+
+.s-t-tag {
+  font-size: 12px;
+}
+
+.showbox-down {
+  margin-top: 10px;
+}
+
+.s-d-item {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.mbox {
+}
+
+.mbox-item {
+}
+
+.m-t-title {
+  background-color: #f8f8f8;
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #959595;
+  font-family: 'KaiTi';
+}
+
+.m-t-t-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.m-t-t-right {
+  float: right;
+  margin-right: 10px;
+}
+
+.m-list {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px dotted #efefef;
+  clear: both;
+}
+
+.m-l-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.m-l-timg {
+  float: left;
+}
+
+.m-l-t-img {
+  width: 48px;
+  height: 48px;
+}
+
+.m-l-title {
+  float: left;
+}
+
+.m-l-right {
+  float: right;
+  margin-right: 10px;
+}

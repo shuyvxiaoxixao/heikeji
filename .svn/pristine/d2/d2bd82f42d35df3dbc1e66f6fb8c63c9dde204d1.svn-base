@@ -1,0 +1,32 @@
+<!--pages/mbook/addwater.wxml-->
+<view class='content'>
+  <view class='nav'>
+    <view class='nav-l nav-active'>
+      支出
+    </view>
+    <view class='nav-r'>
+      收入
+    </view>
+  </view>
+  <view class='jz-box'>
+    <view class='jz-title'>
+      <image class='jz-t-img' src='https://tooapi.tooao.cn/images/icon/1.png'></image>
+      <label>收入</label>
+    </view>
+    <view class='jz-input'>
+      <input placeholder="0.00" auto-focus/>
+    </view>
+  </view>
+  <scroll-view class='jz-item' scroll-y='true'>
+    <view class='jz-imgs'>
+        <text class="iconfont icon-icon" style="font-size:50px;color:#f0f0f0"></text>  
+    </view>
+     <view class='jz-imgs'>
+        <text class="iconfont icon-icon" style="font-size:50px;color:#f0f0f0"></text>  
+    </view>
+     <view class='jz-imgs'>
+        <text class="iconfont icon-icon" style="font-size:50px;color:#f0f0f0"></text>  
+    </view>
+  </scroll-view>
+
+</view>

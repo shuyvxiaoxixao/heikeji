@@ -1,0 +1,52 @@
+<!--pages/mbook/mdetail.wxml-->
+<view class='m-list'>
+  <view class='m-l-left'>
+    <view class='iconfont-box m-l-timg' style='background-color: {{mdetail.tagbg}}'>
+      <label class='iconfont {{mdetail.tagimg}}'></label>
+    </view>
+  </view>
+  <view class='m-l-right'>
+    <view class='m-l-tagname'>
+      {{mdetail.tag}}
+    </view>
+     <view class='m-l-money'>
+      {{mdetail.money}}
+    </view> 
+  </view>
+</view>
+<view class='zhanwei'></view>
+
+<view class='detail'>
+  <view class='detail-item'>
+    <view class='detail-item-left'>
+      类型
+    </view>
+    <view class='detail-item-right'>
+      {{mdetail.type}}
+    </view>
+  </view>
+  <view class='detail-item'>
+    <view class='detail-item-left'>
+      金额
+    </view>
+    <view class='detail-item-right'>
+      {{mdetail.money}}
+    </view>
+  </view>
+  <view class='detail-item'>
+    <view class='detail-item-left'>
+      记录时间
+    </view>
+    <view class='detail-item-right'>
+      {{mdetail.createtime}}
+    </view>
+  </view>
+  <view class='detail-item'>
+    <view class='detail-item-left'>
+      备注
+    </view>
+    <view class='detail-item-right'>
+      {{mdetail.remark}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,33 @@
+<!--pages/cards/addcard.wxml-->
+<view class="content">
+  <view class='cardbox'>
+    <view class='cardbox-item'>
+      <image class='cardbox-img' src='/imges/cards.png'></image>
+    </view>
+    <form bindsubmit="formSubmit">
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='cardname' placeholder="卡片名称：例(中国银行)" maxlength="10" auto-focus/>
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='dudingmoney' type="digit" placeholder="固定额度：例(10000)" maxlength="10" />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='yiyongmoney' type="digit" placeholder="已用额度：例(6000)" maxlength="10" />
+        </view>
+      </view>
+      <view class="t-item">
+        <view class='t-item-right'>
+          <input name='keyongmoney' type="digit" placeholder="可用额度：例(4000)" />
+        </view>
+      </view>
+      <view class='savecradbox'>
+        <button formType="submit" type="primary" class="savecrad" loading="{{loading}}" bindtap="savecrad"> 保存 </button>
+      </view>
+    </form>
+  </view>
+</view>

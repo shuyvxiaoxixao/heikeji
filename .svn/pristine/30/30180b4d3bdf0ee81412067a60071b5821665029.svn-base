@@ -1,0 +1,59 @@
+/* pages/mbook/mdetail.wxss */
+@import "/svgs.wxss";
+
+.m-list {
+  height: 60px;
+  line-height: 60px;
+  clear: both;
+  vertical-align: middle;
+}
+
+/* .m-list:hover {
+  background-color: #f0f0f0;
+} */
+
+.m-l-left {
+  float: left;
+  /* padding: 8px 10px 0; */
+  width: 17%;
+  /* text-align: center; */
+}
+
+.m-l-timg {
+  background-color: #f6c142;
+  margin: 8px 10px 0;
+}
+
+.m-l-right {
+  width: 83%;
+  float: left;
+}
+
+.m-l-tagname {
+  float: left;
+}
+
+.m-l-money {
+  float: right;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.detail{
+  padding: 0 10px;
+}
+
+.detail-item {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+.detail-item-left {
+  float: left;
+}
+
+.detail-item-right {
+  float: right;
+}

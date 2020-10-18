@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/show/show",
+    "pages/mbook/mbook",
+    "pages/cards/cards",
+    "pages/cards/addcard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "智慧记账本",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "imges/money.png",
+        "iconPath": "imges/money.png",
+        "pagePath": "pages/mbook/mbook",
+        "text": "钱包"
+      },
+      {
+        "selectedIconPath": "imges/menu.png",
+        "iconPath": "imges/menu.png",
+        "pagePath": "pages/cards/cards",
+        "text": "卡片"
+      },
+      {
+        "selectedIconPath": "imges/user.png",
+        "iconPath": "imges/user.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

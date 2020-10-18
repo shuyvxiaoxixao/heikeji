@@ -1,0 +1,54 @@
+<!--pages/mbook/addwater.wxml-->
+<view class='nav'>
+  <view class='nav-item {{nav_color1}}' bindtap="jizhangmenu" data-item='1'>
+    支出
+  </view>
+  <view class='nav-item  {{nav_color2}}' bindtap="jizhangmenu" data-item='2'>
+    收入
+  </view>
+</view>
+<view class='jz-box b-bottom'>
+  <view class='jz-title'>
+    <view class='jz-t-img'>
+      <label class='iconfont {{nav_icon}}'></label>
+    </view>
+    <label class='jz-t-text'>{{nav_name}}</label>
+  </view>
+  <view class='jz-input-box'>
+    <input type='digit' class='jz-input' placeholder="0.00" auto-focus/>
+  </view>
+</view>
+<view class='content'>
+  <scroll-view class='jz-item' scroll-y='true'>
+    <view class='jz-item-img' wx:for="{{iconlist}}" wx:key="id">
+      <view id='tag{{item.id}}' bindtap='clickimgs' data-tagname='{{item.name}}' data-tagicon='{{item.icon}}' data-tagid='{{item.id}}'>
+        <view class='jz-imgs'>
+          <text class="iconfont {{item.icon}}"></text>
+        </view>
+        <view class='jz-tag'>{{item.name}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+<view class='jz-gj'>
+  <view class='rili'>
+    <picker class="rili-box" mode="date" value="{{date}}" bindchange="bindDateChange">
+      {{date}}
+    </picker>
+  </view>
+  <view class='remark'>
+    <input type='text' placeholder='备注'></input>
+  </view>
+</view>
+<view class='content btnbox'>
+  <view class='btnitem1'>
+    <view class='btnsive'>
+      保存再记
+    </view>
+  </view>
+  <view class='btnitem2'>
+    <view class='btnsive'>
+      保存
+    </view>
+  </view>
+</view>

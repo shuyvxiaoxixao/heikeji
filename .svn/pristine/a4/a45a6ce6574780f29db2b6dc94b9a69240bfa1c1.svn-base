@@ -1,0 +1,5 @@
+<!--pages/cards/addcard.wxml-->
+<view class="content">
+  <view class="t-item">
+  </view>
+</view>

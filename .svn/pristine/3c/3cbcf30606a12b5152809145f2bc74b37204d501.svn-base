@@ -1,0 +1,31 @@
+<!--pages/mbook/addwater.wxml-->
+<view class='nav'>
+  <view class='nav-l nav-active'>
+    支出
+  </view>
+  <view class='nav-r'>
+    收入
+  </view>
+</view>
+<view class='jz-box b-bottom'>
+  <view class='jz-title'>
+    <view class='jz-t-img'>
+      <label class='iconfont icon-icon'></label>
+    </view>
+    <label class='jz-t-text'>工资</label>
+  </view>
+  <view class='jz-input-box'>
+    <input type='digit' class='jz-input' placeholder="0.00" auto-focus/>
+  </view>
+</view>
+<view class='content'>
+  <scroll-view class='jz-item' scroll-y='true'>
+    <view class='jz-item-img' wx:for="{{iconlist}}" wx:key="id">
+      <view class='jz-imgs'>
+        <text class="iconfont {{item.icon}}"></text>
+      </view>
+      <view class='jz-tag'>{{item.name}}</view>
+    </view>
+  </scroll-view>
+
+</view>
